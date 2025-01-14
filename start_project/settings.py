@@ -270,7 +270,7 @@ REST_FRAMEWORK = {
 }
 
 SPECTACULAR_SETTINGS = {
-    "TITLE": "CheckME",
+    "TITLE": "Find US",
     "DESCRIPTION": "",
     "VERSION": "1.0.0",
     # OTHER SETTINGS

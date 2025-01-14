@@ -11,8 +11,8 @@ from drf_spectacular.views import (
 
 from . import views
 
-admin.site.site_header = "BacBon Limited"
-admin.site.index_title = "Welcome to CheckME"
+admin.site.site_header = "Find Us Here"
+admin.site.index_title = "Welcome to Find Us Here"
 
 urlpatterns = [
     path("", views.index),
@@ -26,6 +26,8 @@ urlpatterns = [
     # YOUR PATTERNS
     path("schema/", SpectacularAPIView.as_view(), name="schema"),
     # Optional UI:
+    
+    path("home/", include("location.urls.home_urls")),
     path(
         "schema/swagger-ui/",
         SpectacularSwaggerView.as_view(url_name="schema"),
